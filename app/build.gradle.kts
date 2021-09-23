@@ -3,6 +3,8 @@ import dependencies.UiDep
 plugins {
     id(Config.Plugins.android)
     id(Config.Plugins.kotlinAndroid)
+    id(Config.Plugins.kotlinKapt)
+    id(Config.Plugins.dagger)
 }
 
 android {
@@ -54,4 +56,8 @@ dependencies {
     implementation(UiDep.material)
     implementation(UiDep.constraint)
     implementation(UiDep.activityKtx)
+
+    // Dagger-Hilt
+    implementation(UiDep.daggerHilt)
+    kapt(UiDep.daggerHiltKapt)
 }

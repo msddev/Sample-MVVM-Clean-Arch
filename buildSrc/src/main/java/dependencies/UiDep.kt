@@ -23,14 +23,8 @@ object UiDep {
     )
 
     // Hilt
-    val DaggerHilt = listOf(
-        Dependencies.DaggerHiltDep.hiltAndroid
-    )
-
-    val DaggerHiltKapt = listOf(
-        Dependencies.DaggerHiltDep.hiltAndroidKapt,
-        Dependencies.DaggerHiltDep.hiltKapt
-    )
+    const val daggerHilt = Dependencies.DaggerHiltDep.hiltAndroid
+    const val daggerHiltKapt = Dependencies.DaggerHiltDep.hiltAndroidKapt
 
     // Coroutines
     val Coroutines = listOf(

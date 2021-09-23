@@ -40,9 +40,7 @@ object Dependencies {
 
     object DaggerHiltDep {
         const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroidVersion}"
-        const val hiltAndroidKapt = "com.google.dagger:hilt-compiler:${Versions.hiltAndroidVersion}"
-        const val hiltKapt = "androidx.hilt:hilt-compiler:${Versions.hiltVersion}"
-
+        const val hiltAndroidKapt = "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidVersion}"
     }
 
     object CoroutinesDep {
