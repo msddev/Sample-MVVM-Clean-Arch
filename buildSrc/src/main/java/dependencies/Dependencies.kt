@@ -61,7 +61,7 @@ object Dependencies {
 
     object RetrofitDep {
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
-        const val moshiConverter =
+        const val jsonConverter =
             "com.squareup.retrofit2:converter-gson:${Versions.gsonConverterVersion}"
         const val loggingInterceptor =
             "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptorVersion}"
