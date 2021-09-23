@@ -62,7 +62,7 @@ object Dependencies {
     object RetrofitDep {
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
         const val moshiConverter =
-            "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverterVersion}"
+            "com.squareup.retrofit2:converter-gson:${Versions.gsonConverterVersion}"
         const val loggingInterceptor =
             "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptorVersion}"
     }
@@ -96,7 +96,6 @@ object Dependencies {
             "androidx.test.espresso:espresso-contrib:${Versions.espressoVersion}"
         const val androidxArchCore =
             "androidx.arch.core:core-testing:${Versions.androidxArchCoreVersion}"
-        const val androidxTestExtJunit = "androidx.test.ext:${Versions.extJunitVersion}"
         const val robolectric = "org.robolectric:robolectric:${Versions.robolectricVersion}"
         const val roomTest = "androidx.room:room-testing:${Versions.roomVersion}"
     }
