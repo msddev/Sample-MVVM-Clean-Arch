@@ -2,9 +2,10 @@ package com.mkdev.zerotohero.presentation.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
-class PresentationPreferencesHelper @Inject constructor(context: Context) {
+class PresentationPreferencesHelper @Inject constructor (context: Context) {
     companion object {
         private const val PREF_PACKAGE_NAME = "com.mkdev.zerotohero.presentation.preferences"
         private const val PREF_KEY_NIGHT_MODE = "night_mode"
