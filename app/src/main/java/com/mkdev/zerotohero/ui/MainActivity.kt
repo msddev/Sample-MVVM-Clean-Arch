@@ -1,4 +1,4 @@
-package com.mkdev.zerotohero
+package com.mkdev.zerotohero.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.mkdev.zerotohero.R
 import com.mkdev.zerotohero.databinding.ActivityMainBinding
 import com.mkdev.zerotohero.extension.setupWithNavController
 import com.mkdev.zerotohero.extension.showSnackBar
