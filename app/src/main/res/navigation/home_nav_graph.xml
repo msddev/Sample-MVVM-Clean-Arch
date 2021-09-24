@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationGraphHome"
+    app:startDestination="@id/characterListFragment">
+
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.mkdev.zerotohero.ui.characterlist.CharacterListFragment"
+        android:label="@string/fragment_characters_title_label"
+        tools:layout="@layout/fragment_character_list">
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.mkdev.zerotohero.ui.characterdetail.CharacterDetailFragment"
+        android:label="@string/fragment_character_detail_title_label"
+        tools:layout="@layout/fragment_character_detail">
+        <argument
+            android:name="character_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+</navigation>
