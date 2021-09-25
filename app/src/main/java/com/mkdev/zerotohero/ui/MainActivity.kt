@@ -1,7 +1,7 @@
 package com.mkdev.zerotohero.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
@@ -11,9 +11,11 @@ import com.mkdev.zerotohero.R
 import com.mkdev.zerotohero.databinding.ActivityMainBinding
 import com.mkdev.zerotohero.extension.setupWithNavController
 import com.mkdev.zerotohero.extension.showSnackBar
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null

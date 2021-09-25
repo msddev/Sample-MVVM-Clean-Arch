@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mkdev.zerotohero.base.BaseFragment
+import com.mkdev.zerotohero.core.theme.ThemeUtils
 import com.mkdev.zerotohero.databinding.FragmentSettingsBinding
 import com.mkdev.zerotohero.domain.models.SettingUiModel
 import com.mkdev.zerotohero.extension.observe
@@ -22,6 +23,9 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
 
     @Inject
     lateinit var settingAdapter: SettingsAdapter
+
+    @Inject
+    lateinit var themeUtils: ThemeUtils
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,15 +53,13 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
             }
             is SettingUiModel.Success -> {
                 handleLoading(false)
-                result.data.let {
-                    settingAdapter.list = it
-                }
+                settingAdapter.list = result.data
             }
             is SettingUiModel.Error -> {
                 handleErrorMessage(result.error)
             }
             is SettingUiModel.NightMode -> {
-
+                themeUtils.setNightMode(result.nightMode)
             }
         }
     }
