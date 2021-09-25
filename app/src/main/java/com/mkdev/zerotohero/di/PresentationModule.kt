@@ -1,6 +1,8 @@
 package com.mkdev.zerotohero.di
 
 import android.content.Context
+import com.mkdev.zerotohero.presentation.utils.CoroutineContextProvider
+import com.mkdev.zerotohero.presentation.utils.CoroutineContextProviderImp
 import com.mkdev.zerotohero.presentation.utils.PresentationPreferencesHelper
 import dagger.Module
 import dagger.Provides
@@ -22,4 +24,10 @@ object PresentationModule {
     fun providePresentationPreferenceHelper(
         @ApplicationContext context: Context
     ): PresentationPreferencesHelper = PresentationPreferencesHelper(context)
+
+    @Singleton
+    @Provides
+    fun provideCoroutineContextProvider(
+        coroutineContextProviderImp: CoroutineContextProviderImp
+    ): CoroutineContextProvider = coroutineContextProviderImp
 }

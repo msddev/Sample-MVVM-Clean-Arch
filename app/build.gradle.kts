@@ -72,4 +72,18 @@ dependencies {
     // Dagger-Hilt
     implementation(UiDep.daggerHilt)
     kapt(UiDep.daggerHiltKapt)
+    // Glide
+    implementation(UiDep.glide)
+    kapt(UiDep.glideKapt)
+    // Timber
+    implementation(UiDep.timber)
+    // Test Dependencies
+    testImplementation(UiDep.Test.junit)
+    testImplementation(UiDep.Test.assertJ)
+    testImplementation(UiDep.Test.mockitoKotlin)
+    testImplementation(UiDep.Test.mockitoInline)
+    testImplementation(UiDep.Test.coroutines)
+    testImplementation(UiDep.Test.androidxArchCore)
+    testImplementation(UiDep.Test.robolectric)
+    testImplementation(UiDep.Test.testExtJunit)
 }
