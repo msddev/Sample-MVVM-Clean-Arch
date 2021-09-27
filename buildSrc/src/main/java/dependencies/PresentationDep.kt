@@ -21,6 +21,8 @@ object PresentationDep {
         const val junit = Dependencies.TestDep.junit
         const val coroutines = Dependencies.TestDep.coroutinesTest
         const val mockitoKotlin = Dependencies.TestDep.mockitoKotlin
+        const val mockitoCore = Dependencies.TestDep.mockitoCore
+        const val mockitoAndroid = Dependencies.TestDep.mockitoAndroid
         const val mockitoInline = Dependencies.TestDep.mockitoInline
         const val assertJ = Dependencies.TestDep.assertJ
         const val androidxArchCore = Dependencies.TestDep.androidxArchCore

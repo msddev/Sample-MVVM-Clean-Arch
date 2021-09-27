@@ -40,7 +40,8 @@ object Dependencies {
 
     object DaggerHiltDep {
         const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroidVersion}"
-        const val hiltAndroidKapt = "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidVersion}"
+        const val hiltAndroidKapt =
+            "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidVersion}"
     }
 
     object CoroutinesDep {
@@ -82,9 +83,17 @@ object Dependencies {
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutinesTestVersion}"
         const val junit = "junit:junit:${Versions.junitVersion}"
         const val assertJ = "org.assertj:assertj-core:${Versions.assertJVersion}"
-        const val mockitoKotlin =
-            "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlinVersion}"
+
+        // required if you want to use Mockito for unit tests
+        // mockito-inline library replaced the mockito-core library.
+        // it is possible to mock final classes and static methods
+        const val mockitoCore = "org.mockito:mockito-core:${Versions.mockitoCoreVersion}"
+        const val mockitoAndroid = "org.mockito:mockito-android:${Versions.mockitoAndroidVersion}"
         const val mockitoInline = "org.mockito:mockito-inline:${Versions.mockitoInlineVersion}"
+
+        // mockito-kotlin is a wrapper library around Mockito
+        const val mockitoKotlin =
+            "org.mockito.kotlin:mockito-kotlin:${Versions.mockitoKotlinVersion}"
         const val testRunner = "androidx.test:runner:${Versions.androidTestRunnerVersion}"
         const val testRules = "androidx.test:rules:${Versions.androidTestRuleVersion}"
         const val testCore = "androidx.test:core:${Versions.axTestCore}"
