@@ -47,6 +47,7 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
     }
 
     private fun onViewStateChange(result: SettingUiModel) {
+        if (result.isRedelivered) return
         when (result) {
             is SettingUiModel.Loading -> {
                 handleLoading(true)

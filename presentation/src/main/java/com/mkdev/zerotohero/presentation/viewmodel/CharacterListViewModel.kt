@@ -6,10 +6,12 @@ import com.mkdev.zerotohero.domain.interactor.GetCharacterListUseCase
 import com.mkdev.zerotohero.domain.models.CharacterUIModel
 import com.mkdev.zerotohero.presentation.utils.CoroutineContextProvider
 import com.mkdev.zerotohero.presentation.utils.UiAwareLiveData
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 
+@HiltViewModel
 class CharacterListViewModel @Inject constructor(
     contextProvider: CoroutineContextProvider,
     private val characterListUseCase: GetCharacterListUseCase,

@@ -7,5 +7,6 @@
     <string name="fragment_characters_title_label">Characters</string>
     <string name="fragment_character_detail_title_label">Character Detail</string>
     <string name="fragment_settings_title_label">Settings</string>
-
+    <string name="character_list_label_last_known_location">"Last known location: "</string>
+    <string name="splash_screen">Splash Screen</string>
 </resources>
