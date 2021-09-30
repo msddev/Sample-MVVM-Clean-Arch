@@ -21,6 +21,9 @@ android {
         versionName = Environments.Release.appVersionName
 
         testInstrumentationRunner = Config.testRunner
+
+        // Configs
+        buildConfigField("String", "BASE_URL", "\"" + Environments.Release.baseUrl + "\"")
     }
 
     buildTypes {

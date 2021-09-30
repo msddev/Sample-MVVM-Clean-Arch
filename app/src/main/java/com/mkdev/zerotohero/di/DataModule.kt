@@ -1,7 +1,9 @@
 package com.mkdev.zerotohero.di
 
 import com.mkdev.zerotohero.BuildConfig
-import com.mkdev.zerotohero.data.repositoryImpl.SettingsRepositoryImpl
+import com.mkdev.zerotohero.data.CharacterRepositoryImpl
+import com.mkdev.zerotohero.data.SettingsRepositoryImpl
+import com.mkdev.zerotohero.domain.repository.CharacterRepository
 import com.mkdev.zerotohero.domain.repository.SettingsRepository
 import dagger.Module
 import dagger.Provides
@@ -17,4 +19,10 @@ object DataModule {
     @Provides
     fun provideSettingsRepository(): SettingsRepository =
         SettingsRepositoryImpl(BuildConfig.VERSION_NAME)
+
+    @Singleton
+    @Provides
+    fun provideCharacterRepository(
+        characterRepositoryImpl: CharacterRepositoryImpl
+    ): CharacterRepository = characterRepositoryImpl
 }

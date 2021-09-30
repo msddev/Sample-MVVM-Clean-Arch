@@ -8,7 +8,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-abstract class BaseViewModel(val contextProvider: CoroutineContextProvider) : ViewModel() {
+abstract class BaseViewModel(private val contextProvider: CoroutineContextProvider) : ViewModel() {
 
     private val job: Job = Job()
 

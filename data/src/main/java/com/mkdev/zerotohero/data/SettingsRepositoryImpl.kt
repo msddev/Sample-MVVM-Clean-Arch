@@ -1,4 +1,4 @@
-package com.mkdev.zerotohero.data.repositoryImpl
+package com.mkdev.zerotohero.data
 
 import com.mkdev.zerotohero.domain.models.SettingType
 import com.mkdev.zerotohero.domain.models.Settings
