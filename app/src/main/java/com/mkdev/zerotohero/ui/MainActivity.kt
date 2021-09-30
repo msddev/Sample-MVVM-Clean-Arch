@@ -3,7 +3,6 @@ package com.mkdev.zerotohero.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -59,13 +58,14 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Whenever the selected controller changes, setup the action bar.
-        controller.observe(
-            this,
-            Observer { navController ->
-                setupActionBarWithNavController(navController)
-            }
-        )
+        controller.observe(this, { navController ->
+            setupActionBarWithNavController(navController)
+        })
         currentNavController = controller
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return currentNavController?.value?.navigateUp() ?: false
     }
 
     override fun onBackPressed() {
