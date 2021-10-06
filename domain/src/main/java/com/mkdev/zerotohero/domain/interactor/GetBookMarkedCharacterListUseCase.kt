@@ -5,7 +5,7 @@ import com.mkdev.zerotohero.domain.repository.CharacterRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class GetBookMarkedCharacterList @Inject constructor(
+class GetBookMarkedCharacterListUseCase @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : BaseUseCase<Unit, Flow<List<Character>>> {
     override suspend fun invoke(params: Unit): Flow<List<Character>> =
