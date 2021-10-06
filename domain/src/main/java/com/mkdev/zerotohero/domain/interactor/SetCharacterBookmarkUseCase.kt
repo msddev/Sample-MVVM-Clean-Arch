@@ -4,7 +4,7 @@ import com.mkdev.zerotohero.domain.repository.CharacterRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class CharacterBookmarkUseCase @Inject constructor(
+class SetCharacterBookmarkUseCase @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : BaseUseCase<Long, Flow<Int>> {
 

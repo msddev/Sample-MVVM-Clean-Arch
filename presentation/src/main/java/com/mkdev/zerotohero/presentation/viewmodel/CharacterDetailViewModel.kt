@@ -1,9 +1,9 @@
 package com.mkdev.zerotohero.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
-import com.mkdev.zerotohero.domain.interactor.CharacterBookmarkUseCase
-import com.mkdev.zerotohero.domain.interactor.CharacterUnBookmarkUseCase
 import com.mkdev.zerotohero.domain.interactor.GetCharacterByIdUseCase
+import com.mkdev.zerotohero.domain.interactor.SetCharacterBookmarkUseCase
+import com.mkdev.zerotohero.domain.interactor.SetCharacterUnBookmarkUseCase
 import com.mkdev.zerotohero.domain.models.Bookmark
 import com.mkdev.zerotohero.domain.models.CharacterDetailUIModel
 import com.mkdev.zerotohero.presentation.utils.CoroutineContextProvider
@@ -17,8 +17,8 @@ import javax.inject.Inject
 class CharacterDetailViewModel @Inject constructor(
     contextProvider: CoroutineContextProvider,
     private val characterByIdUseCase: GetCharacterByIdUseCase,
-    private val setCharacterBookmarkUseCase: CharacterBookmarkUseCase,
-    private val setCharaUnBookmarkUseCase: CharacterUnBookmarkUseCase
+    private val setCharacterBookmarkUseCase: SetCharacterBookmarkUseCase,
+    private val setCharaUnBookmarkUseCase: SetCharacterUnBookmarkUseCase
 ) : BaseViewModel(contextProvider) {
 
     private val _characterDetail = UiAwareLiveData<CharacterDetailUIModel>()

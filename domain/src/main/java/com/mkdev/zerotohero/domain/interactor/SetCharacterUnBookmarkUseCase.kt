@@ -4,7 +4,7 @@ import com.mkdev.zerotohero.domain.repository.CharacterRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class CharacterUnBookmarkUseCase @Inject constructor(
+class SetCharacterUnBookmarkUseCase @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : BaseUseCase<Long, Flow<Int>> {
     override suspend operator fun invoke(params: Long) =
