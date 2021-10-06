@@ -8,6 +8,6 @@ class CharacterBookmarkUseCase @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : BaseUseCase<Long, Flow<Int>> {
 
-    override suspend operator fun invoke(params: Long) =
+    override suspend operator fun invoke(params: Long): Flow<Int> =
         characterRepository.setCharacterBookmarked(params)
 }
