@@ -10,8 +10,8 @@ This app shows the usage of the new Navigation Architecture Component in collabo
 - Light/ Dark theme.
 
 ## Screenshots
-<img alt="Light01" src="screenshots/screen_01.png" width="210">  <img alt="Light02" src="screenshots/screen_02.png" width="210">  <img alt="Light03" src="screenshots/screen_03.png" width="210">  <img alt="Light04" src="screenshots/screen_04.png" width="210">
-<img alt="Dark11" src="screenshots/screen_11.png" width="210">  <img alt="Dark12" src="screenshots/screen_12.png" width="210">  <img alt="Dark13" src="screenshots/screen_13.png" width="210">  <img alt="Dark14" src="screenshots/screen_14.png" width="210">
+<img alt="Light01" src="screenshots/screen_01.png" width="190">  <img alt="Light02" src="screenshots/screen_02.png" width="190">  <img alt="Light03" src="screenshots/screen_03.png" width="190">  <img alt="Light04" src="screenshots/screen_04.png" width="190">
+<img alt="Dark11" src="screenshots/screen_11.png" width="190">  <img alt="Dark12" src="screenshots/screen_12.png" width="190">  <img alt="Dark13" src="screenshots/screen_13.png" width="190">  <img alt="Dark14" src="screenshots/screen_14.png" width="190">
 
 ## Architecture
 Uses concepts of the notorious Uncle Bob's architecture called [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).</br>
