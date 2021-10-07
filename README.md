@@ -1,4 +1,4 @@
-# Rick-and-Morty
+# Zero-to-Hero
 The Rick And Morty - App consuming a [Rick and Morty API](https://rickandmortyapi.com/) to display Characters it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
 
 This app shows the usage of the new Navigation Architecture Component in collaboration with the Bottom Navigation view with separate back stack history for each tab.
